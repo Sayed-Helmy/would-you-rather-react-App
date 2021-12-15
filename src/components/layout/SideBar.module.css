@@ -1,0 +1,70 @@
+.sidebar {
+  background-color: #fff;
+  height: calc(100vh - (65px + 3rem));
+  width: 22%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 0px #0000002e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  background-image: url(../assets/wave.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.sidebar .img-holder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.username {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 5px;
+}
+.scores {
+  width: 100%;
+  font-size: 1rem;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.scores div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.scores div span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #00bbd485;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 63%);
+  margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,135 @@
+.userCard {
+  position: relative;
+  width: 60%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 0px #0000002e;
+  overflow: hidden;
+}
+.userCard::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background-color: violet;
+  transform: rotate(45deg);
+  top: -32px;
+  left: -12px;
+}
+.medal {
+  position: absolute;
+  width: 50px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 1rem;
+}
+.imgHolder {
+  width: 25%;
+  height: 25%width;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+.imgHolder img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.cardBody {
+  width: 50%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.cardBody > h2 {
+  margin-bottom: 20px;
+}
+.cardBody > h2,
+.cardBody p {
+  margin: 0;
+}
+.cardBody > h2 {
+  margin-bottom: 20px;
+}
+.cardBody p {
+  font-weight: 600;
+}
+.cardBody div:nth-child(3) {
+  letter-spacing: 1px;
+}
+.cardBody div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.cardBody div span {
+  width: 20px;
+  height: 20px;
+  background-color: violet;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.63);
+  color: rgb(22, 22, 22);
+}
+.score {
+  flex: 1 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.score span {
+  width: 50px;
+  height: 50px;
+  background-color: #00bcd4;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.63);
+}
+@media (max-width: 650px) {
+  .userCard {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .card {
+    gap: 0;
+  }
+  .imgHolder {
+    width: 30%;
+    height: 30%width;
+    border-radius: 50%;
+    margin-left: 0;
+  }
+  .cardBody > h2 {
+    margin-bottom: 3px;
+    font-size: 1.1em;
+  }
+  .score h3 {
+    font-size: 1.1em;
+  }
+  .score span {
+    width: 60%;
+    height: 60%width;
+  }
+}

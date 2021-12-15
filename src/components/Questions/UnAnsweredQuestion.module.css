@@ -1,0 +1,114 @@
+.unAnswered {
+  width: 55%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 0px #0000002e;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.unAnswered::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/wave-Blue.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.unAnswered header {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding: 8px 5px;
+  text-transform: capitalize;
+}
+.question-body {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgHolder {
+  width: 25%;
+  border-radius: 50%;
+}
+.imgHolder img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.questionPoll {
+  width: 60%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: relative;
+}
+.questionPoll::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  background-color: #acacac;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.questionPoll p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin: 5px 0 10px;
+}
+.questionPoll div {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.questionPoll div label {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.questionPoll form button {
+  width: 130px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.questionPoll form button:hover {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+@media (max-width: 650px) {
+  .unAnswered {
+    width: 100%;
+    height: auto;
+  }
+  .question-body {
+    flex-direction: column;
+  }
+  .questionPoll {
+    width: 60%;
+  }
+  .imgHolder {
+    width: 30%;
+    height: 30%;
+  }
+  .questionPoll form button {
+    width: 100%;
+  }
+}

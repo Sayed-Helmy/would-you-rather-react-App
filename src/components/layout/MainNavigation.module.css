@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  gap: 1rem;
+  position: relative;
+}
+.logo {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  width: 22%;
+}
+.logo:active h1 {
+  transform: scale(1.02);
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.logo span {
+  color: #fe0002;
+}
+.nav {
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.nav ul a {
+  padding: 10px 16px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  color: #6d6d6d;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul a svg {
+  margin-right: 2px;
+}
+.nav ul a:hover,
+.active {
+  color: #ec0106 !important;
+  background-color: #ffe5e6 !important;
+}
+
+.logo,
+.nav {
+  box-shadow: 0px 4px 10px 0px #0000002e;
+}
+@media (max-width: 775px) {
+  .nav ul span {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .logo {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+.UserProfile {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  bottom: -154px;
+  right: 15px;
+  box-shadow: 0px 4px 10px 0px #af9f9f2e;
+  z-index: 10;
+  animation: dropDown 0.5s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.UserProfile .img-holder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.UserProfile .img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.UserProfile button {
+  width: 80%;
+  height: 28px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.UserProfile button:hover {
+  background-color: #2d2d2d !important;
+  color: white !important;
+}
+
+@media (max-width: 660px) {
+  .UserProfile {
+    width: 91%;
+  }
+}
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
